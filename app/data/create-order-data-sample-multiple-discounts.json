@@ -1,0 +1,460 @@
+{
+  "id": 5661322510653,
+  "admin_graphql_api_id": "gid://shopify/Order/5661322510653",
+  "app_id": 6167201,
+  "browser_ip": "104.10.165.104",
+  "buyer_accepts_marketing": false,
+  "cancel_reason": null,
+  "cancelled_at": null,
+  "cart_token": "c1-0940a577fd93c479a495b0056057af4f",
+  "checkout_id": 37299776717117,
+  "checkout_token": "a72b089f003e263198c2941f3d4c2ab2",
+  "client_details": {
+    "accept_language": "en-US",
+    "browser_height": null,
+    "browser_ip": "104.10.165.104",
+    "browser_width": null,
+    "session_hash": null,
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+  },
+  "closed_at": null,
+  "company": null,
+  "confirmation_number": "6TNGGX250",
+  "confirmed": true,
+  "contact_email": "test@cratebind.com",
+  "created_at": "2023-12-13T12:18:15-06:00",
+  "currency": "USD",
+  "current_subtotal_price": "338.87",
+  "current_subtotal_price_set": {
+    "shop_money": {
+      "amount": "338.87",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "338.87",
+      "currency_code": "USD"
+    }
+  },
+  "current_total_additional_fees_set": null,
+  "current_total_discounts": "37.66",
+  "current_total_discounts_set": {
+    "shop_money": {
+      "amount": "37.66",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "37.66",
+      "currency_code": "USD"
+    }
+  },
+  "current_total_duties_set": null,
+  "current_total_price": "366.84",
+  "current_total_price_set": {
+    "shop_money": {
+      "amount": "366.84",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "366.84",
+      "currency_code": "USD"
+    }
+  },
+  "current_total_tax": "27.97",
+  "current_total_tax_set": {
+    "shop_money": {
+      "amount": "27.97",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "27.97",
+      "currency_code": "USD"
+    }
+  },
+  "customer_locale": "en-US",
+  "device_id": null,
+  "discount_codes": [],
+  "email": "test@cratebind.com",
+  "estimated_taxes": false,
+  "financial_status": "paid",
+  "fulfillment_status": null,
+  "landing_site": null,
+  "landing_site_ref": null,
+  "location_id": null,
+  "merchant_of_record_app_id": null,
+  "name": "#1119",
+  "note": null,
+  "note_attributes": [],
+  "number": 119,
+  "order_number": 1119,
+  "order_status_url": "https://ecom-newbrand.myshopify.com/70801391933/orders/f8c516f66fd8a72c12258329338b5f8b/authenticate?key=ae81b68b7885812ee0298ff6287f425f",
+  "original_total_additional_fees_set": null,
+  "original_total_duties_set": null,
+  "payment_gateway_names": ["shopify_payments"],
+  "phone": null,
+  "po_number": null,
+  "presentment_currency": "USD",
+  "processed_at": "2023-12-13T12:18:11-06:00",
+  "reference": "a3bc8fb7f8f13824ab65ec7ee2709a2e",
+  "referring_site": null,
+  "source_identifier": "a3bc8fb7f8f13824ab65ec7ee2709a2e",
+  "source_name": "6167201",
+  "source_url": null,
+  "subtotal_price": "338.87",
+  "subtotal_price_set": {
+    "shop_money": {
+      "amount": "338.87",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "338.87",
+      "currency_code": "USD"
+    }
+  },
+  "tags": "",
+  "tax_exempt": false,
+  "tax_lines": [
+    {
+      "price": "21.19",
+      "rate": 0.0625,
+      "title": "Texas State Tax",
+      "price_set": [null],
+      "channel_liable": false
+    },
+    {
+      "price": "3.39",
+      "rate": 0.01,
+      "title": "Dallas City Tax",
+      "price_set": [null],
+      "channel_liable": false
+    },
+    {
+      "price": "3.39",
+      "rate": 0.01,
+      "title": "Dallas Mta Transit",
+      "price_set": [null],
+      "channel_liable": false
+    }
+  ],
+  "taxes_included": false,
+  "test": true,
+  "token": "f8c516f66fd8a72c12258329338b5f8b",
+  "total_discounts": "37.66",
+  "total_discounts_set": {
+    "shop_money": {
+      "amount": "37.66",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "37.66",
+      "currency_code": "USD"
+    }
+  },
+  "total_line_items_price": "376.53",
+  "total_line_items_price_set": {
+    "shop_money": {
+      "amount": "376.53",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "376.53",
+      "currency_code": "USD"
+    }
+  },
+  "total_outstanding": "0.00",
+  "total_price": "366.84",
+  "total_price_set": {
+    "shop_money": {
+      "amount": "366.84",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "366.84",
+      "currency_code": "USD"
+    }
+  },
+  "total_shipping_price_set": {
+    "shop_money": {
+      "amount": "0.00",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "0.00",
+      "currency_code": "USD"
+    }
+  },
+  "total_tax": "27.97",
+  "total_tax_set": {
+    "shop_money": {
+      "amount": "27.97",
+      "currency_code": "USD"
+    },
+    "presentment_money": {
+      "amount": "27.97",
+      "currency_code": "USD"
+    }
+  },
+  "total_tip_received": "0.00",
+  "total_weight": 0,
+  "updated_at": "2023-12-13T12:18:16-06:00",
+  "user_id": null,
+  "billing_address": {
+    "first_name": "Test",
+    "address1": "10440 N Central Expy #1520",
+    "phone": "1 (231) 231-2344",
+    "city": "Dallas",
+    "zip": "75231",
+    "province": "Texas",
+    "country": "United States",
+    "last_name": "Wood",
+    "address2": null,
+    "company": "Test Incorporated",
+    "latitude": 32.888978,
+    "longitude": -96.76838110000001,
+    "name": "Test Wood",
+    "country_code": "US",
+    "province_code": "TX"
+  },
+  "customer": {
+    "id": 7664912138557,
+    "email": "test@cratebind.com",
+    "created_at": "2023-12-11T11:19:46-06:00",
+    "updated_at": "2023-12-13T12:18:15-06:00",
+    "first_name": "Test",
+    "last_name": "Wood",
+    "state": "disabled",
+    "note": null,
+    "verified_email": true,
+    "multipass_identifier": null,
+    "tax_exempt": false,
+    "phone": null,
+    "email_marketing_consent": {
+      "state": "not_subscribed",
+      "opt_in_level": "single_opt_in",
+      "consent_updated_at": null
+    },
+    "sms_marketing_consent": null,
+    "tags": "",
+    "currency": "USD",
+    "tax_exemptions": [],
+    "admin_graphql_api_id": "gid://shopify/Customer/7664912138557",
+    "default_address": {
+      "id": 9698186690877,
+      "customer_id": 7664912138557,
+      "first_name": "Test",
+      "last_name": "Wood",
+      "company": "Test Incorporated",
+      "address1": "10440 N Central Expy #1520",
+      "address2": null,
+      "city": "Dallas",
+      "province": "Texas",
+      "country": "United States",
+      "zip": "75231",
+      "phone": "1 (231) 231-2344",
+      "name": "Test Wood",
+      "province_code": "TX",
+      "country_code": "US",
+      "country_name": "United States",
+      "default": true
+    }
+  },
+  "discount_applications": [
+    {
+      "target_type": "line_item",
+      "type": "automatic",
+      "value": "10.0",
+      "value_type": "percentage",
+      "allocation_method": "across",
+      "target_selection": "all",
+      "title": "Order Level %"
+    }
+  ],
+  "fulfillments": [],
+  "line_items": [
+    {
+      "id": 14572265505085,
+      "admin_graphql_api_id": "gid://shopify/LineItem/14572265505085",
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Watco Universal NuFit® Innovator® Model 948700 Stainless Steel 3-Pin Push Pull Drain Trim Kit with Grid, Oil-Rubbed Bronze - Standard",
+      "price": "87.64",
+      "price_set": [null],
+      "product_exists": true,
+      "product_id": 8826154320189,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "wt948700ppbzg3p",
+      "taxable": true,
+      "title": "Watco Universal NuFit® Innovator® Model 948700 Stainless Steel 3-Pin Push Pull Drain Trim Kit with Grid, Oil-Rubbed Bronze",
+      "total_discount": "0.00",
+      "total_discount_set": [null],
+      "variant_id": 47245604979005,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Standard",
+      "vendor": "Watco Manufacturing Company",
+      "tax_lines": [null],
+      "duties": [],
+      "discount_allocations": [null]
+    },
+    {
+      "id": 14572265537853,
+      "admin_graphql_api_id": "gid://shopify/LineItem/14572265537853",
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "3/4 inch TotalFit Repair Coupling - Standard",
+      "price": "17.17",
+      "price_set": [null],
+      "product_exists": true,
+      "product_id": 8826231882045,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "wbotf4787575",
+      "taxable": true,
+      "title": "3/4 inch TotalFit Repair Coupling",
+      "total_discount": "0.00",
+      "total_discount_set": [null],
+      "variant_id": 47245510934845,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Standard",
+      "vendor": "Uponor Wirsbo",
+      "tax_lines": [null],
+      "duties": [],
+      "discount_allocations": [null]
+    },
+    {
+      "id": 14572265570621,
+      "admin_graphql_api_id": "gid://shopify/LineItem/14572265570621",
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Zurn EZC Series 4 inch Solvent Weld PVC Round Adjustable Floor Cleanout - Standard",
+      "price": "69.81",
+      "price_set": [null],
+      "product_exists": true,
+      "product_id": 8826181615933,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "zezcpv4r6",
+      "taxable": true,
+      "title": "Zurn EZC Series 4 inch Solvent Weld PVC Round Adjustable Floor Cleanout",
+      "total_discount": "0.00",
+      "total_discount_set": [null],
+      "variant_id": 47245574930749,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Standard",
+      "vendor": "Zurn Industries",
+      "tax_lines": [null],
+      "duties": [],
+      "discount_allocations": [null]
+    },
+    {
+      "id": 14572265603389,
+      "admin_graphql_api_id": "gid://shopify/LineItem/14572265603389",
+      "current_quantity": 10,
+      "fulfillable_quantity": 10,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "3M Scotch 2.83 inch x 60 yd x 8 mil Pro Strength Duct Tape, Gray - Standard",
+      "price": "13.10",
+      "price_set": [null],
+      "product_exists": true,
+      "product_id": 8331365548349,
+      "properties": [],
+      "quantity": 10,
+      "requires_shipping": true,
+      "sku": "3m3979",
+      "taxable": true,
+      "title": "3M Scotch 2.83 inch x 60 yd x 8 mil Pro Strength Duct Tape, Gray",
+      "total_discount": "0.00",
+      "total_discount_set": [null],
+      "variant_id": 47245711376701,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Standard",
+      "vendor": "3M",
+      "tax_lines": [null],
+      "duties": [],
+      "discount_allocations": [null]
+    },
+    {
+      "id": 14572265636157,
+      "admin_graphql_api_id": "gid://shopify/LineItem/14572265636157",
+      "current_quantity": 1,
+      "fulfillable_quantity": 1,
+      "fulfillment_service": "manual",
+      "fulfillment_status": null,
+      "gift_card": false,
+      "grams": 0,
+      "name": "Sloan 8 inch Center Faucet Wall Mount Standard Vitreous China Square Lavatory Sink, 20-3/4 inch L x 18-1/4 inch W, White - Standard",
+      "price": "70.91",
+      "price_set": [null],
+      "product_exists": true,
+      "product_id": 8826128269629,
+      "properties": [],
+      "quantity": 1,
+      "requires_shipping": true,
+      "sku": "ss3803wh",
+      "taxable": true,
+      "title": "Sloan 8 inch Center Faucet Wall Mount Standard Vitreous China Square Lavatory Sink, 20-3/4 inch L x 18-1/4 inch W, White",
+      "total_discount": "0.00",
+      "total_discount_set": [null],
+      "variant_id": 47245639713085,
+      "variant_inventory_management": "shopify",
+      "variant_title": "Standard",
+      "vendor": "Sloan",
+      "tax_lines": [null],
+      "duties": [],
+      "discount_allocations": [null]
+    }
+  ],
+  "payment_terms": null,
+  "refunds": [],
+  "shipping_address": {
+    "first_name": "Test",
+    "address1": "10440 N Central Expy #1520",
+    "phone": "1 (231) 231-2344",
+    "city": "Dallas",
+    "zip": "75231",
+    "province": "Texas",
+    "country": "United States",
+    "last_name": "Wood",
+    "address2": null,
+    "company": "Test Incorporated",
+    "latitude": 32.888978,
+    "longitude": -96.76838110000001,
+    "name": "Test Wood",
+    "country_code": "US",
+    "province_code": "TX"
+  },
+  "shipping_lines": [
+    {
+      "id": 4557895336253,
+      "carrier_identifier": "da22abc49b60bbaacbf44882dfe71263",
+      "code": "Standard",
+      "discounted_price": "0.00",
+      "discounted_price_set": [null],
+      "phone": null,
+      "price": "0.00",
+      "price_set": [null],
+      "requested_fulfillment_service_id": null,
+      "source": "shopify",
+      "title": "Standard",
+      "tax_lines": [null],
+      "discount_allocations": []
+    }
+  ]
+}
