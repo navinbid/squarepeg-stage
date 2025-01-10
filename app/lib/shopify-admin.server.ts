@@ -8,10 +8,10 @@ import {HOMEPAGE_FEATURED_PRODUCTS_QUERY} from '~/routes/($lang)';
 import {getVariantsByUserProStatus} from './product-variant';
 
 export const adminGraphQLClient = new GraphQLClient(
-  `https://ecom-newbrand.myshopify.com/admin/api/2023-10/graphql.json`,
+  `https://ecom-newbrand-dev.myshopify.com/admin/api/2023-10/graphql.json`,
   {
     headers: {
-      'X-Shopify-Access-Token': `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`,
+      'X-Shopify-Access-Token': `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`,
     },
     fetch,
   },

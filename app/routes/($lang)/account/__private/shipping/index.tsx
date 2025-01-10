@@ -15,7 +15,7 @@ export async function loader({ request, context, params }: LoaderArgs) {
     const myHeaders = new Headers();
     myHeaders.append(
         'X-Shopify-Access-Token',
-        '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',
+        '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',
     );
     myHeaders.append('Content-Type', 'application/json');
     const shippingdata = await fetch(
@@ -46,7 +46,7 @@ export const action: ActionFunction = async ({ request, context, params }) => {
     const cid = formData.get('customer_id') as string;
 
     const myHeaders = new Headers();
-    myHeaders.append('X-Shopify-Access-Token', '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');
+    myHeaders.append('X-Shopify-Access-Token', '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');
 
     try {
         if (formData.get('edit') != null) {

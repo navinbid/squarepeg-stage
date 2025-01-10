@@ -159,8 +159,8 @@ function ProForm({ onClose }) {
     console.log(formData.taxexamptdoc)
   };
   const SHOPIFY_API_URL =
-    'https://ecom-newbrand.myshopify.com/admin/api/2022-07/graphql.json';
-  const SHOPIFY_ACCESS_TOKEN = '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';
+    'https://ecom-newbrand-dev.myshopify.com/admin/api/2022-07/graphql.json';
+  const SHOPIFY_ACCESS_TOKEN = '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';
 
   const indianStates = [
     'Alabama',

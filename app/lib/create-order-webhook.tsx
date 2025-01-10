@@ -160,11 +160,13 @@ export async function buildErpRequest({
 
 export async function updateOrderMetafields({
   success,
+  status,
   orderId,
   wtNumber = null,
   OENumber = null,
 }: {
   success: string;
+  status: string;
   orderId: string;
   wtNumber?: string;
   OENumber?: string;
@@ -179,13 +181,25 @@ export async function updateOrderMetafields({
     // },
   ];
 
-  metafields.push({
-    ownerId: orderId,
-    namespace: '3193253',
-    key: 'erpSuccess',
-    value: success,
-    type: 'boolean',
-  });
+  if (success) {
+    metafields.push({
+      ownerId: orderId,
+      namespace: '3193253',
+      key: 'erpSuccess',
+      value: success,
+      type: 'boolean',
+    });
+  }
+
+  if (status) {
+    metafields.push({
+      ownerId: orderId,
+      namespace: 'arena',
+      key: 'ERPStatus',
+      value: status,
+      type: 'single_line_text_field',
+    });
+  }
 
   if (wtNumber) {
     metafields.push({

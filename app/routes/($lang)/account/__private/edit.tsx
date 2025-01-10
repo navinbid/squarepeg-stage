@@ -30,7 +30,7 @@ export const action: ActionFunction = async ({ request, context, params }) => {
   const myHeaders = new Headers();
   myHeaders.append(
     'X-Shopify-Access-Token',
-    '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',
+    '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',
   );
   myHeaders.append('Content-Type', 'application/json');
 

@@ -29,16 +29,15 @@ export async function action({ request, context }: ActionArgs) {
   console.log('ORDER CREATE WEBHOOK START');
   const data: CreateOrder = await request.json();
 
-  console.log('ORDER DATA:');
-  console.log(data);
+  console.log('ORDER DATA:', data);
 
 
   const erpsuccessresponse = await fetch(
-    `https://ecom-newbrand.myshopify.com/admin/api/2022-07/orders/${data.id}/metafields.json`,
+    `https://ecom-newbrand-dev.myshopify.com/admin/api/2022-07/orders/${data.id}/metafields.json`,
     {
       method: 'GET',
       headers: {
-        'X-Shopify-Access-Token': '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', // Securely fetch token from env
+        'X-Shopify-Access-Token': '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', // Securely fetch token from env
         'Content-Type': 'application/json',
       },
     }
@@ -46,24 +45,24 @@ export async function action({ request, context }: ActionArgs) {
 
   const { metafields } = await erpsuccessresponse.json();
 
+
   const erpSuccessMetafield = metafields.find(
-    (field) => field.key === 'erpSuccess'
+    (field) => field.key === 'ERPStatus'
   );
 
   // Check if the value of the metafield is "true"
-  if (erpSuccessMetafield && erpSuccessMetafield.value === 'true') {
-    console.log("ERP success has been processed");
-    return;
+  if (erpSuccessMetafield && erpSuccessMetafield.value === 'request-send') {
+    console.log("ERP request has already send successfully.");
+    return json({ message: 'Order has already been processing' });
   }
 
+  // Setting "request-send" before ERP call
+  await updateOrderMetafields({ success: 'false', status: 'request-send', orderId: data.admin_graphql_api_id });
+
   // Continue with your action if the condition is not met
-
-
-
   const customerId = data.customer.id;
-  console.log(`Customer ID: ${customerId}`);
+  // console.log(`Customer ID: ${customerId}`);
 
-  // fetch customer from Shopify API to get metafields
   const response = await adminGraphQLClient.request<CustomerWithMetafields>(
     GET_CUSTOMER_METAFIELDS,
     {
@@ -80,15 +79,14 @@ export async function action({ request, context }: ActionArgs) {
   const erpOrder = await buildErpRequest({
     isProAccount,
     order: data,
-    inforConnectionString: context.env.INFOR_CONNECTION_STRING,
+    inforConnectionString: 'appserverDC://10.100.5.10:7190/sxapiappsrv',
   });
 
-  console.log(context.env.INFOR_CONNECTION_STRING);
   const builder = new Builder();
   const xml = builder.buildObject(erpOrder);
 
-  console.log('XML');
-  console.log(xml);
+  // console.log('XML:', xml);
+
 
   const erpResponse = await fetch(ERP_ENDPOINT, {
     method: 'POST',
@@ -100,16 +98,23 @@ export async function action({ request, context }: ActionArgs) {
   });
 
   const text = await erpResponse.text();
-  console.log("Responce");
-  console.log(text);
+  console.log("Responce:", erpResponse.status);
+
+  if (erpResponse.status === 200) {
+    await updateOrderMetafields({
+      success: 'true',
+      status: 'request-send',
+      orderId: data.admin_graphql_api_id,
+    });
+  }
+
   try {
     if (text) {
+
       const parsed = await parseStringPromise(text, {
         explicitArray: false,
         explicitRoot: false,
       });
-      console.log(parsed)
-
 
       const responseError =
         parsed['s:Body']['OEFullOrderMntV6Response']['OEFullOrderMntV6Result'][
@@ -122,6 +127,7 @@ export async function action({ request, context }: ActionArgs) {
         // update order metafield "erpSuccess" to false
         await updateOrderMetafields({
           success: 'false',
+          status: 'request-send',
           orderId: data.admin_graphql_api_id,
         });
 
@@ -135,14 +141,16 @@ export async function action({ request, context }: ActionArgs) {
 
       const wtNumber = await getOrderWtNumber(
         OENumber.split('-')[0],
-        context.env.INFOR_CONNECTION_STRING,
+        'appserverDC://10.100.5.10:7190/sxapiappsrv',
       );
-      console.log(OENumber)
-      console.log(wtNumber)
+
+      // console.log("OENumber:", OENumber)
+      // console.log("WTNumber:", wtNumber)
 
       // update order metafield "erpSuccess" to true
       await updateOrderMetafields({
         success: 'true',
+        status: 'request-send',
         orderId: data.admin_graphql_api_id,
         wtNumber,
         OENumber,
@@ -155,10 +163,12 @@ export async function action({ request, context }: ActionArgs) {
     // if any unexpected exception occurs, assume the ERP did not receive the order
     await updateOrderMetafields({
       success: 'false',
+      status: 'request-send',
       orderId: data.admin_graphql_api_id,
     });
     return json({ message: 'Error creating order' });
   }
+
 
   return json({ message: 'Order created successfully' });
 }

@@ -147,12 +147,12 @@ export async function loader({ params, context }: LoaderArgs) {
     const myHeaders = new Headers();
     myHeaders.append(
       'X-Shopify-Access-Token',
-      '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',
+      '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',
     );
     myHeaders.append('Content-Type', 'application/json');
 
     const response = await fetch(
-      'https://ecom-newbrand.myshopify.com/admin/api/2022-07/customers/' +
+      'https://ecom-newbrand-dev.myshopify.com/admin/api/2022-07/customers/' +
       idarr[1] +
       '/metafields.json',
       {
@@ -282,7 +282,7 @@ export const action: ActionFunction = async ({ request, context, params }) => {
     const myHeaders = new Headers();
     myHeaders.append(
       'X-Shopify-Access-Token',
-      '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',
+      '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',
     );
     myHeaders.append('Content-Type', 'application/json');
 
@@ -362,7 +362,7 @@ export const action: ActionFunction = async ({ request, context, params }) => {
 
 
     const resp = await fetch(
-      'https://ecom-newbrand.myshopify.com/admin/api/2022-07/customers/' +
+      'https://ecom-newbrand-dev.myshopify.com/admin/api/2022-07/customers/' +
       idarr[1] +
       '/metafields.json',
       {

@@ -1,6 +1,6 @@
-import React, {useCallback, forwardRef} from 'react';
-import {multipass} from '~/lib/multipass/multipass';
-import {Button} from './Button';
+import React, { useCallback, forwardRef } from 'react';
+import { multipass } from '~/lib/multipass/multipass';
+import { Button } from './Button';
 
 type MultipassCheckoutButtonProps = {
   // as?: keyof React.ElementType;
@@ -31,8 +31,8 @@ export const MultipassCheckoutButton = forwardRef<
 
   const updatedCheckoutUrl =
     checkoutUrl?.replace(
-      'squarepegsupply.myshopify.com',
-      'checkout.squarepegsupply.com',
+      'ecom-newbrand-dev.myshopify.com',
+      'squarepeg-stage.myshopify.com',
     ) || checkoutUrl;
 
   // const Element: keyof React.ElementType = as;

@@ -39,7 +39,7 @@ export async function loader({ request, context, params }: LoaderArgs) {
   const myHeaders = new Headers();
   myHeaders.append(
     'X-Shopify-Access-Token',
-    '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',
+    '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',
   );
   myHeaders.append('Content-Type', 'application/json');
 
@@ -134,8 +134,8 @@ export default function OrderRoute() {
   const { order, lineItems, discountValue, discountPercentage, checkoutDetails, paymentDetails } =
     useLoaderData<typeof loader>();
 
-  console.log("Order Checkout Details", JSON.parse(checkoutDetails))
-  console.log("All order details in Order page", useLoaderData())
+  // console.log("Order Checkout Details", JSON.parse(checkoutDetails))
+  // console.log("All order details in Order page", useLoaderData())
 
   // Order details variables
   const orderDate = new Date(order?.processedAt!).toLocaleDateString('en-US', { year: "numeric", day: "numeric", month: "long" })
@@ -158,7 +158,7 @@ export default function OrderRoute() {
   const taxAmount = order?.totalTaxV2?.amount
   const grandTotal = parseFloat(orderAmount) + parseFloat(taxAmount)
 
-  console.log("Main Order", order)
+  console.log("Main Order:", order)
 
   let cartlines = []
 
@@ -173,10 +173,9 @@ export default function OrderRoute() {
 
   const componentRef = useRef()
 
-  console.log("product details in cart details", lineItems)
+  // console.log("product details in cart details", lineItems)
 
   return (
-
     <div className='content-wrapper' ref={componentRef}>
 
       {/* Breadcrumbs start */}
@@ -279,6 +278,7 @@ export default function OrderRoute() {
 
         </div>
       </div>
+
       <div className='bg-neutral-98 px-4 py-3.5 rounded-t-2xl sm:flex sm:justify-between sm:items-center'>
         <div className='sm-max:pb-2.5'>
           <p className='text-base font-normal'><span className='text-success text-lg font-bold sm-max:block sm-max:pb-2.5'>{status}</span><span className=' text-neutral-88 px-3 sm-max:hidden'>|</span> <span>{orderItems} {`${orderItems > 1 ? "Items" : "Item"}`}</span><span className=' text-neutral-88 px-3'>|</span> <span>Total: ${grandTotal}</span> </p>
@@ -287,7 +287,6 @@ export default function OrderRoute() {
           <button className="flex justify-center items-center rounded-full text-center text-sm py-2 px-12 font-normal transition-colors bg-brand hover:bg-brand-hover text-white sm:w-auto w-full" type="button"><span>Track Package</span> <svg width="16" height="16" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="arrow"><path id="arrow-external" d="M5.83333 5V6.66667H12.9917L5 14.6583L6.175 15.8333L14.1667 7.84167V15H15.8333V5H5.83333Z" fill="currentColor" className='pl-1 mt-[3px]'></path></g></svg></button>
         </a>
       </div>
-
       <div className='mt-10 mb-24'>
 
         {/* @ts-ignore */}
@@ -360,6 +359,7 @@ export default function OrderRoute() {
         })}
 
       </div>
+
     </div>
   );
 }

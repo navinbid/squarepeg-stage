@@ -86,10 +86,12 @@
   "note_attributes": [],
   "number": 119,
   "order_number": 1119,
-  "order_status_url": "https://ecom-newbrand.myshopify.com/70801391933/orders/f8c516f66fd8a72c12258329338b5f8b/authenticate?key=ae81b68b7885812ee0298ff6287f425f",
+  "order_status_url": "https://ecom-newbrand-dev.myshopify.com/70801391933/orders/f8c516f66fd8a72c12258329338b5f8b/authenticate?key=ae81b68b7885812ee0298ff6287f425f",
   "original_total_additional_fees_set": null,
   "original_total_duties_set": null,
-  "payment_gateway_names": ["shopify_payments"],
+  "payment_gateway_names": [
+    "shopify_payments"
+  ],
   "phone": null,
   "po_number": null,
   "presentment_currency": "USD",
@@ -117,21 +119,27 @@
       "price": "21.19",
       "rate": 0.0625,
       "title": "Texas State Tax",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "channel_liable": false
     },
     {
       "price": "3.39",
       "rate": 0.01,
       "title": "Dallas City Tax",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "channel_liable": false
     },
     {
       "price": "3.39",
       "rate": 0.01,
       "title": "Dallas Mta Transit",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "channel_liable": false
     }
   ],
@@ -281,7 +289,9 @@
       "grams": 0,
       "name": "Watco Universal NuFit® Innovator® Model 948700 Stainless Steel 3-Pin Push Pull Drain Trim Kit with Grid, Oil-Rubbed Bronze - Standard",
       "price": "87.64",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "product_exists": true,
       "product_id": 8826154320189,
       "properties": [],
@@ -291,14 +301,20 @@
       "taxable": true,
       "title": "Watco Universal NuFit® Innovator® Model 948700 Stainless Steel 3-Pin Push Pull Drain Trim Kit with Grid, Oil-Rubbed Bronze",
       "total_discount": "0.00",
-      "total_discount_set": [null],
+      "total_discount_set": [
+        null
+      ],
       "variant_id": 47245604979005,
       "variant_inventory_management": "shopify",
       "variant_title": "Standard",
       "vendor": "Watco Manufacturing Company",
-      "tax_lines": [null],
+      "tax_lines": [
+        null
+      ],
       "duties": [],
-      "discount_allocations": [null]
+      "discount_allocations": [
+        null
+      ]
     },
     {
       "id": 14572265537853,
@@ -311,7 +327,9 @@
       "grams": 0,
       "name": "3/4 inch TotalFit Repair Coupling - Standard",
       "price": "17.17",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "product_exists": true,
       "product_id": 8826231882045,
       "properties": [],
@@ -321,14 +339,20 @@
       "taxable": true,
       "title": "3/4 inch TotalFit Repair Coupling",
       "total_discount": "0.00",
-      "total_discount_set": [null],
+      "total_discount_set": [
+        null
+      ],
       "variant_id": 47245510934845,
       "variant_inventory_management": "shopify",
       "variant_title": "Standard",
       "vendor": "Uponor Wirsbo",
-      "tax_lines": [null],
+      "tax_lines": [
+        null
+      ],
       "duties": [],
-      "discount_allocations": [null]
+      "discount_allocations": [
+        null
+      ]
     },
     {
       "id": 14572265570621,
@@ -341,7 +365,9 @@
       "grams": 0,
       "name": "Zurn EZC Series 4 inch Solvent Weld PVC Round Adjustable Floor Cleanout - Standard",
       "price": "69.81",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "product_exists": true,
       "product_id": 8826181615933,
       "properties": [],
@@ -351,14 +377,20 @@
       "taxable": true,
       "title": "Zurn EZC Series 4 inch Solvent Weld PVC Round Adjustable Floor Cleanout",
       "total_discount": "0.00",
-      "total_discount_set": [null],
+      "total_discount_set": [
+        null
+      ],
       "variant_id": 47245574930749,
       "variant_inventory_management": "shopify",
       "variant_title": "Standard",
       "vendor": "Zurn Industries",
-      "tax_lines": [null],
+      "tax_lines": [
+        null
+      ],
       "duties": [],
-      "discount_allocations": [null]
+      "discount_allocations": [
+        null
+      ]
     },
     {
       "id": 14572265603389,
@@ -371,7 +403,9 @@
       "grams": 0,
       "name": "3M Scotch 2.83 inch x 60 yd x 8 mil Pro Strength Duct Tape, Gray - Standard",
       "price": "13.10",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "product_exists": true,
       "product_id": 8331365548349,
       "properties": [],
@@ -381,14 +415,20 @@
       "taxable": true,
       "title": "3M Scotch 2.83 inch x 60 yd x 8 mil Pro Strength Duct Tape, Gray",
       "total_discount": "0.00",
-      "total_discount_set": [null],
+      "total_discount_set": [
+        null
+      ],
       "variant_id": 47245711376701,
       "variant_inventory_management": "shopify",
       "variant_title": "Standard",
       "vendor": "3M",
-      "tax_lines": [null],
+      "tax_lines": [
+        null
+      ],
       "duties": [],
-      "discount_allocations": [null]
+      "discount_allocations": [
+        null
+      ]
     },
     {
       "id": 14572265636157,
@@ -401,7 +441,9 @@
       "grams": 0,
       "name": "Sloan 8 inch Center Faucet Wall Mount Standard Vitreous China Square Lavatory Sink, 20-3/4 inch L x 18-1/4 inch W, White - Standard",
       "price": "70.91",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "product_exists": true,
       "product_id": 8826128269629,
       "properties": [],
@@ -411,14 +453,20 @@
       "taxable": true,
       "title": "Sloan 8 inch Center Faucet Wall Mount Standard Vitreous China Square Lavatory Sink, 20-3/4 inch L x 18-1/4 inch W, White",
       "total_discount": "0.00",
-      "total_discount_set": [null],
+      "total_discount_set": [
+        null
+      ],
       "variant_id": 47245639713085,
       "variant_inventory_management": "shopify",
       "variant_title": "Standard",
       "vendor": "Sloan",
-      "tax_lines": [null],
+      "tax_lines": [
+        null
+      ],
       "duties": [],
-      "discount_allocations": [null]
+      "discount_allocations": [
+        null
+      ]
     }
   ],
   "payment_terms": null,
@@ -446,14 +494,20 @@
       "carrier_identifier": "da22abc49b60bbaacbf44882dfe71263",
       "code": "Standard",
       "discounted_price": "0.00",
-      "discounted_price_set": [null],
+      "discounted_price_set": [
+        null
+      ],
       "phone": null,
       "price": "0.00",
-      "price_set": [null],
+      "price_set": [
+        null
+      ],
       "requested_fulfillment_service_id": null,
       "source": "shopify",
       "title": "Standard",
-      "tax_lines": [null],
+      "tax_lines": [
+        null
+      ],
       "discount_allocations": []
     }
   ]
